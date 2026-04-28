@@ -35,7 +35,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("org.mockito:mockito-core:5.15.2")
     testImplementation("org.slf4j:slf4j-simple:2.0.16")
-    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.107.0") {
+    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.108.0") {
         exclude(group = "org.jetbrains", module = "annotations")
     }
 }
