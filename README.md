@@ -1,56 +1,50 @@
 # ChestTerminal-drake
 
-## Resumen Drake
-Addon de Slimefun para acceso remoto y gestion centralizada de redes de cofres.
+[![Rama](https://img.shields.io/badge/branch-1.21--latin-2ea44f)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/tree/1.21-latin)
+[![Licencia](https://img.shields.io/github/license/DrakesCraft-Labs/ChestTerminal-drake)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/blob/1.21-latin/LICENSE)
+[![Ultimo commit](https://img.shields.io/github/last-commit/DrakesCraft-Labs/ChestTerminal-drake/1.21-latin)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/commits/1.21-latin)
 
-## Que anade a Slimefun
-- Extiende contenido de Slimefun con mecanicas y bloques propios del addon.
-- Incluye ajustes de compatibilidad para stack Drake 1.21.
+## Descripción técnica
+Addon de acceso remoto a inventarios/redes de cofres para flujos de logística en Slimefun.
 
-## Estado
-- Extraido desde drakes-slimefun-labs (rama 1.21-latin).
-- Objetivo: desarrollo aislado por addon y releases independientes.
+## Qué añade a Slimefun
+- Simplifica gestión de almacenamiento masivo.
+- Reduce fricción en automatización de insumos.
+- Mejora ergonomía de bases tecnológicas.
 
----
+## Características principales
+- Terminal de acceso para almacenamiento distribuido.
+- Interacciones de inventario enfocadas en calidad de vida.
+- Port actualizado a APIs de Dough/Slimefun usadas por Drake.
 
-# ChestTerminal
+## Matriz de compatibilidad
+| Componente | Estado |
+|---|---|
+| Minecraft | 1.21.x |
+| Paper/Purpur | 1.21.x |
+| Slimefun Core Drake | 11.x (línea `1.21-latin`) |
+| Java | 21 |
 
-ChestTerminal is a [Slimefun5](https://github.com/Slimefun/Slimefun4) addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
+## Instalación
+1. Descarga el `.jar` de Releases del repositorio.
+2. Copia el archivo en la carpeta `plugins/` del servidor.
+3. Asegura dependencias (`Slimefun`, `ProtocolLib` u otras según addon).
+4. Reinicia el servidor y revisa `logs/latest.log` para validar carga.
 
-It adds a Chest Terminal that you can hook up to a Cargo System to access all your items that are accessible through Cargo Nodes on the CT-Channel.
-
-## ⚡ Requirements
-
-- Java 21+
-- [Slimefun5](https://github.com/Slimefun/Slimefun4) (v5.0.0+)
-- Paper/Spigot 1.16+
-
-## 🔧 Building
-
+## Build local
 ```bash
-gradlew.bat build    # Windows
-./gradlew build      # Linux/macOS
+mvn -DskipTests clean package
 ```
 
-## ⚠️ Performance Notice
+Artefacto esperado:
+- `target/ChestTerminal-drake-*.jar`
 
-**Warning**: ChestTerminal can be very heavy on performance. This addon can cause quite a bit of lag, so make sure that you are aware of this when installing.
+## Flujo de release
+1. Crear branch de cambios (`feature/*` o `fix/*`).
+2. Abrir PR hacia `1.21-latin` con plan de pruebas.
+3. Al mergear, crear tag/release y publicar jar compilado.
 
-## 📖 Wiki
+Incluir notas de compatibilidad de UI/Inventario con versión de Paper objetivo.
 
-[Read more on the Slimefun Wiki...](https://github.com/Slimefun/Slimefun4/wiki/ChestTerminal)
-
-## 💬 Discord
-
-You can find Slimefun's community on Discord! Click the badge below to join the server for suggestions/questions or other discussions about this plugin.
-
-<p align="center">
-  <a href="https://discord.gg/fsD4Bkh">
-    <img src="https://img.shields.io/discord/565557184348422174?color=7289DA&label=Discord&style=for-the-badge" alt="Discord Invite"/>
-  </a>
-</p>
-
-## 📜 License
-
-This project is open-source and licensed under the [MIT License](https://github.com/TheBusyBiscuit/ChestTerminal/blob/master/LICENSE).
-
+## Relación con el monorepo
+Este repositorio se mantiene en paralelo con `drakes-slimefun-labs` para desarrollo aislado por addon y despliegues independientes.
