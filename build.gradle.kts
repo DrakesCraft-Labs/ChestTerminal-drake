@@ -26,7 +26,7 @@ repositories {
 
 dependencies {
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     implementation("org.bstats:bstats-bukkit:3.0.2")
 
