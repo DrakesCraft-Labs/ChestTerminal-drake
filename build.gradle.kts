@@ -18,6 +18,7 @@ github {
 java { toolchain { languageVersion.set(JavaLanguageVersion.of(21)) } }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots")
     maven("https://repo.papermc.io/repository/maven-public/")
@@ -25,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
+    compileOnly("com.github.drakescraft_labs:slimefun-core:11.0-Drake-1.21.1-SNAPSHOT")
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     implementation("org.bstats:bstats-bukkit:3.2.1")
