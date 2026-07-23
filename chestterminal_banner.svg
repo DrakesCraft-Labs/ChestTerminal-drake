@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300">
+  <defs>
+    <linearGradient id="ctBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="ctCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+
+    <filter id="ctGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes ctPulse {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.7)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 30px rgba(56, 189, 248, 1)); }
+    }
+    .bg-ct { fill: url(#ctBg); }
+    .title-ct { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 44px; fill: url(#ctCyan); animation: ctPulse 3.5s infinite ease-in-out; }
+    .sub-ct { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 14px; fill: #67E8F9; letter-spacing: 3px; }
+    .badge-ct { fill: #083344; stroke: #06B6D4; stroke-width: 1.5; rx: 6px; }
+    .btext-ct { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; fill: #22D3EE; }
+  </style>
+
+  <rect class="bg-ct" width="920" height="300" rx="14" stroke="#06B6D4" stroke-width="1.5" />
+
+  <g transform="translate(460, 95)">
+    <polygon points="0,-42 34,-20 34,20 0,42 -34,20 -34,-20" fill="#083344" stroke="url(#ctCyan)" stroke-width="3" filter="url(#ctGlow)" />
+    <circle cx="0" cy="0" r="10" fill="#22D3EE" />
+  </g>
+
+  <text x="460" y="185" text-anchor="middle" class="title-ct">CHEST TERMINAL DRAKE</text>
+  <text x="460" y="215" text-anchor="middle" class="sub-ct">MASS CHEST INDEXING &amp; ITEM SEARCH · RUST FFM HYBRID ENGINE</text>
+
+  <g transform="translate(230, 245)">
+    <rect x="0" y="0" width="145" height="30" class="badge-ct" />
+    <text x="12" y="20" class="btext-ct">MASS STORAGE</text>
+
+    <rect x="165" y="0" width="150" height="30" class="badge-ct" stroke="#FF4500" />
+    <text x="177" y="20" class="btext-ct" fill="#FF7300">RUST FFM HYBRID</text>
+
+    <rect x="335" y="0" width="135" height="30" class="badge-ct" stroke="#38BDF8" />
+    <text x="347" y="20" class="btext-ct" fill="#38BDF8">PAPER 1.21.11</text>
+  </g>
+</svg>

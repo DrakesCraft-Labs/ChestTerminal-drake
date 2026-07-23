@@ -1,50 +1,43 @@
-# ChestTerminal-drake
+<div align="center">
 
-[![Rama](https://img.shields.io/badge/branch-1.21--latin-2ea44f)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/tree/1.21-latin)
-[![Licencia](https://img.shields.io/github/license/DrakesCraft-Labs/ChestTerminal-drake)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/blob/1.21-latin/LICENSE)
-[![Ultimo commit](https://img.shields.io/github/last-commit/DrakesCraft-Labs/ChestTerminal-drake/1.21-latin)](https://github.com/DrakesCraft-Labs/ChestTerminal-drake/commits/1.21-latin)
+![ChestTerminal-Drake Banner](./chestterminal_banner.svg)
 
-## Descripción técnica
-Addon de acceso remoto a inventarios/redes de cofres para flujos de logística en Slimefun.
+# 🗄️ ChestTerminal-Drake
 
-## Qué añade a Slimefun
-- Simplifica gestión de almacenamiento masivo.
-- Reduce fricción en automatización de insumos.
-- Mejora ergonomía de bases tecnológicas.
+**Sistema de Indexación Masiva de Cofres, Búsqueda de Ítems e Interfaz Digital para Slimefun4**
 
-## Características principales
-- Terminal de acceso para almacenamiento distribuido.
-- Interacciones de inventario enfocadas en calidad de vida.
-- Port actualizado a APIs de Dough/Slimefun usadas por Drake.
+<p>
+  <a href="https://github.com/DrakesCraft-Labs/ChestTerminal-drake"><img src="https://img.shields.io/badge/GitHub-ChestTerminal--Drake-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Java-21_FFM_Panama-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21 FFM"/>
+  <img src="https://img.shields.io/badge/Rust-FFM_Accelerated-FF4500?style=for-the-badge&logo=rust&logoColor=white" alt="Rust Native"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-06B6D4?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+</p>
 
-## Matriz de compatibilidad
-| Componente | Estado |
-|---|---|
-| Minecraft | 1.21.x |
-| Paper/Purpur | 1.21.x |
-| Slimefun Core Drake | 11.x (línea `1.21-latin`) |
-| Java | 21 |
+</div>
 
-## Instalación
-1. Descarga el `.jar` de Releases del repositorio.
-2. Copia el archivo en la carpeta `plugins/` del servidor.
-3. Asegura dependencias (`Slimefun`, `ProtocolLib` u otras según addon).
-4. Reinicia el servidor y revisa `logs/latest.log` para validar carga.
+---
 
-## Build local
+## 🗄️ ¿Qué es ChestTerminal-Drake?
+
+`ChestTerminal-drake` conecta múltiples cofres normales, cofres dobles y barriles dentro de una zona en una interfaz centralizada de búsqueda y extracción instantánea.
+
+### 🧰 Funcionalidades Clave
+- **Búsqueda Instantánea**: Busca ítems por nombre, lore o ID de Slimefun a través de cientos de cofres conectados.
+- **Exportación / Importación Automática**: Extrae o almacena ítems con un solo clic o mediante tolvas.
+- **Aceleración Nativa en Rust (RustNativeBridge)**: Búsqueda indexada en memoria RAM nativa en nanosegundos sin pausas de Garbage Collector.
+
+---
+
+## 🛠️ Compilación
+
 ```bash
-mvn -DskipTests clean package
+mvn clean package
 ```
 
-Artefacto esperado:
-- `target/ChestTerminal-drake-*.jar`
+---
 
-## Flujo de release
-1. Crear branch de cambios (`feature/*` o `fix/*`).
-2. Abrir PR hacia `1.21-latin` con plan de pruebas.
-3. Al mergear, crear tag/release y publicar jar compilado.
+<div align="center">
 
-Incluir notas de compatibilidad de UI/Inventario con versión de Paper objetivo.
+**DrakesCraft Labs** · Mantenido por [**JackStar6677-1**](https://github.com/JackStar6677-1)
 
-## Relación con el monorepo
-Este repositorio se mantiene en paralelo con `drakes-slimefun-labs` para desarrollo aislado por addon y despliegues independientes.
+</div>
