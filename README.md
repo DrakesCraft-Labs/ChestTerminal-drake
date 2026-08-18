@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/ChestTerminal-drake/1.21-latin/chestterminal_banner.svg" alt="ChestTerminal-drake Banner" width="920" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/ChestTerminal-drake/main/banner.svg" alt="ChestTerminal-drake Banner" width="920" />
 
 # 🗄️ ChestTerminal-Drake
 
