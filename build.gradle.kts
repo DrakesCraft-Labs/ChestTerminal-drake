@@ -1,7 +1,7 @@
 plugins {
     java
     id("com.gradleup.shadow") version "9.6.1"
-    id("io.github.intisy.github-gradle") version "1.8.4.1"
+    id("io.github.intisy.github-gradle") version "1.10.3"
 }
 
 group = "io.github.thebusybiscuit"
@@ -31,12 +31,12 @@ dependencies {
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     implementation("org.bstats:bstats-bukkit:3.2.1")
 
-    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation(platform("org.junit:junit-bom:6.1.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("org.mockito:mockito-core:5.23.0")
     testImplementation("org.slf4j:slf4j-simple:2.0.18")
-    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.110.0") {
+    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.116.3") {
         exclude(group = "org.jetbrains", module = "annotations")
     }
 }
